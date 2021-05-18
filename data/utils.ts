@@ -1,8 +1,23 @@
 import { GRABS, GRAB_PRE } from './data'
+import { Odds } from './odds'
 
-export function makeGrabMove() {
-    const includePre = Math.round(Math.random()) > 0
-    const p = Math.floor(Math.random() * GRAB_PRE.length)
-    const g = Math.floor(Math.random() * GRABS.length)
+const odds = new Odds()
+
+export function makeTrick() {
+    const type = 'vert'
+
+    switch (type) {
+        case 'vert':
+            return makeGrabMove()
+        default:
+            return ''
+    }
+}
+
+function makeGrabMove() {
+    const includePre = odds.bool(40)
+    const p = odds.natural(0, GRAB_PRE.length)
+    const g = odds.natural(0, GRABS.length)
+
     return [includePre ? GRAB_PRE[p] : undefined, GRABS[g]].join(' ')
 }
