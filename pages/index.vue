@@ -1,12 +1,29 @@
 <template>
-    <div class="container">
+    <div class="">
         <div class="grid">
             <Trick v-for="(trick, index) in tricksAsList" :key="index">{{
                 trick
             }}</Trick>
         </div>
         <div class="mt-8">
-            <button @click="doNewTrick">Do a Trick</button>
+            <Button :onclick="doNewTrick">Do a Trick</Button>
+        </div>
+        <div class="max-w-md px-8 mt-24 mx-auto">
+            <p>
+                <span aria-hidden
+                    ><span
+                        class="dropcap float-left mt-2 mr-2 text-5xl leading-none capsize"
+                        >N</span
+                    >eed</span
+                >
+                <span class="hidden">Need</span> something to wow your
+                subscribers during your next streaming sesh, or just looking for
+                a new way to carve the space-time slush? Pluck your next
+                hoverboard trick out of the dimensional flotsam — it might
+                something basic to keep your combo going, or it could be
+                something no one’s ever done before because it defies the laws
+                of&nbsp;physics!
+            </p>
         </div>
     </div>
 </template>
@@ -14,11 +31,13 @@
 <script>
 import Vue from 'vue'
 
+import Button from '~/components/Button.vue'
 import Trick from '~/components/Trick.vue'
 import { makeTrick } from '~/data/utils'
 
 export default Vue.extend({
     components: {
+        Button,
         Trick,
     },
 
