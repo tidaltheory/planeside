@@ -1,11 +1,11 @@
 <template>
-    <div class="">
-        <div class="grid">
+    <div class="py-24">
+        <div class="sticky top-24 grid gap-4">
             <Trick v-for="(trick, index) in tricksAsList" :key="index">{{
                 trick
             }}</Trick>
         </div>
-        <div class="mt-8">
+        <div class="flex lg:justify-end mt-8 lg:mr-[5vw] ml-4">
             <Button :onclick="doNewTrick">Do a Trick</Button>
         </div>
         <div class="px-8 lg:px-[8vw] mt-24 mx-auto">
