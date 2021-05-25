@@ -8,6 +8,7 @@ node_modules
 .cache
 .nuxt
 src/.temp
+coverage
 dist
 sw.*
 
