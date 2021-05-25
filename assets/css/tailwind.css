@@ -8,4 +8,11 @@
         font-weight: 400;
         src: url(/fonts/permanent-marker.woff) format('woff');
     }
+
+    @font-face {
+        font-family: Amatic SC;
+        font-weight: 400;
+        src: url(/fonts/amatic-sc-bold.woff2) format('woff2'),
+            url(/fonts/amatic-sc-bold.woff) format('woff');
+    }
 }

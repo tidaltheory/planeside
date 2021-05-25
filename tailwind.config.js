@@ -24,6 +24,13 @@ module.exports = {
                 lineGap: 31,
                 unitsPerEm: 1024,
             },
+            amatic: {
+                capHeight: 754,
+                ascent: 1016,
+                descent: -245,
+                lineGap: 0,
+                unitsPerEm: 1000,
+            },
         },
 
         extend: {
@@ -43,6 +50,7 @@ module.exports = {
             fontFamily: {
                 sans: 'Inter, sans-serif',
                 marker: 'Permanent Marker, sans-serif',
+                amatic: 'Amatic SC, sans-serif',
             },
             boxShadow: {
                 'inset-white': 'inset 0 0 0 2px #fff',

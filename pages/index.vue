@@ -17,6 +17,7 @@
                             float-left
                             mt-2
                             mr-2
+                            font-amatic
                             text-5xl
                             leading-none
                             capsize
