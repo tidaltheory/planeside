@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Permanent Marker;
+        font-weight: 400;
+        src: url(/fonts/permanent-marker.woff) format('woff');
+    }
+}

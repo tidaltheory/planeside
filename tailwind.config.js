@@ -17,6 +17,13 @@ module.exports = {
                 lineGap: 0,
                 unitsPerEm: 2816,
             },
+            marker: {
+                capHeight: 758,
+                ascent: 1136,
+                descent: -325,
+                lineGap: 31,
+                unitsPerEm: 1024,
+            },
         },
 
         extend: {
@@ -35,6 +42,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: 'Inter, sans-serif',
+                marker: 'Permanent Marker, sans-serif',
             },
             boxShadow: {
                 'inset-white': 'inset 0 0 0 2px #fff',
