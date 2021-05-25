@@ -8,11 +8,19 @@
         <div class="mt-8">
             <Button :onclick="doNewTrick">Do a Trick</Button>
         </div>
-        <div class="max-w-md px-8 mt-24 mx-auto">
+        <div class="px-8 lg:px-[8vw] mt-24 mx-auto">
             <p>
                 <span aria-hidden
                     ><span
-                        class="dropcap float-left mt-2 mr-2 text-5xl leading-none capsize"
+                        class="
+                            dropcap
+                            float-left
+                            mt-2
+                            mr-2
+                            text-5xl
+                            leading-none
+                            capsize
+                        "
                         >N</span
                     >eed</span
                 >
@@ -24,6 +32,8 @@
                 something no one’s ever done before because it defies the laws
                 of&nbsp;physics!
             </p>
+            <p class="my-12 text-center">🛹</p>
+            <p>Slugblaster is &copy; Michael Hamm.</p>
         </div>
     </div>
 </template>
