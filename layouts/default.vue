@@ -1,10 +1,12 @@
 <template>
     <div
         :class="$style.container"
-        class="grid md:grid-rows-1 md:grid-cols-2 h-screen"
+        class="relative grid md:grid-rows-1 md:grid-cols-2 min-h-screen"
     >
         <Nuxt />
-        <div class="row-start-1 md:col-start-2 h-full bg-black" />
+        <div class="relative row-start-1 md:col-start-2">
+            <div class="sticky top-0 h-full bg-black" />
+        </div>
     </div>
 </template>
 

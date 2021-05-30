@@ -1,6 +1,6 @@
 <template>
     <div class="py-24">
-        <div class="sticky top-24 grid gap-4">
+        <div class="grid gap-4">
             <Trick v-for="(trick, index) in tricksAsList" :key="index">{{
                 trick
             }}</Trick>
