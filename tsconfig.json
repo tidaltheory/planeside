@@ -4,18 +4,24 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
+      "~/*": ["src/*"]
     },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2018",
-    "types": ["@nuxt/types", "@types/node"]
+    "target": "es2018",
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client",
+      "vue/ref-macros"
+    ]
   },
-  "exclude": ["node_modules", ".nuxt", "dist"]
+  "exclude": ["dist", "node_modules"]
 }
