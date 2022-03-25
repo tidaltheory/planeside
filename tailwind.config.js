@@ -53,5 +53,5 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [require('tailwindcss-capsize')],
+	plugins: [require('tailwindcss-capsize'), require('tailwindcss-opentype')],
 }

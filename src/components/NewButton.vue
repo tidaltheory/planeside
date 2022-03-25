@@ -13,7 +13,7 @@ const props = defineProps<Props>()
 	>
 		<div class="relative z-10 py-3 px-10 lg:py-4 lg:px-14">
 			<span
-				class="font-medium uppercase tracking-widest text-white lg:text-lg"
+				class="font-medium uppercase tracking-widest text-white ss-02 lg:text-lg"
 			>
 				Drop in
 			</span>
