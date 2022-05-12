@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 
 import NewButton from '~/components/NewButton.vue'
-import TrickText from '~/components/TrickText.vue'
+import TrickList from '~/components/TrickList.vue'
 import { makeTrick } from '~/data/utils'
 
 const tricksChangeTracker = ref(1)
@@ -32,10 +32,8 @@ onMounted(() => doNewTrick())
 
 <template>
 	<div class="py-24">
-		<div class="grid gap-4">
-			<trick-text v-for="(trick, index) in tricksAsList" :key="index">
-				{{ trick }}
-			</trick-text>
+		<div class="grid h-32 items-end gap-4">
+			<trick-list :tricks="tricksAsList"></trick-list>
 		</div>
 		<div class="mt-8 ml-4 flex lg:mr-[5vw] lg:justify-end">
 			<new-button :onclick="doNewTrick">Do a Trick</new-button>
