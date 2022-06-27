@@ -55,7 +55,7 @@
     "@vueuse/core": "8.1.2",
     "@vueuse/head": "0.7.6",
     "animejs": "3.2.1",
-    "vue": "3.2.31",
+    "vue": "3.2.37",
     "vue-demi": "0.12.4",
     "vue-router": "4.0.14"
   },
