@@ -1,30 +1,46 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, Ref, ref } from 'vue'
 
 import NewButton from '~/components/NewButton.vue'
 import TrickList from '~/components/TrickList.vue'
 import { makeTrick } from '~/data/utils'
 
+export type TrickObject = {
+	id: string
+	text: string
+}
+
 const tricksChangeTracker = ref(1)
-const tricks = ref(new Set<string>())
+const tricks: Ref<Array<TrickObject>> = ref([])
+let trickCounter = 0
 
 /**
  * Inluding `tricksChangeTracker` lets Vue know to re-evaluate this
  * property since Sets aren't observable (in v2).
  */
-const tricksAsList = computed(
-	() => tricksChangeTracker.value && Array.from(tricks.value)
-)
+// const tricksAsList = computed(
+// 	() => tricksChangeTracker.value && Array.from(tricks.value)
+// )
 
 function doNewTrick() {
-	tricks.value.add(makeTrick())
-
-	if (tricks.value.size === 4) {
-		tricks.value.delete(Array.from(tricks.value.values())[0])
+	const updatedTricks = tricks.value
+	const newTrick = {
+		id: `${trickCounter++}`,
+		text: makeTrick(),
 	}
 
+	updatedTricks.push(newTrick)
+
+	if (updatedTricks.length === 4) {
+		updatedTricks.shift()
+	}
+	// if (tricks.value.size === 4) {
+	// 	tricks.value.delete(Array.from(tricks.value.values())[0])
+	// }
+
 	// Update this property to trigger a re-render of the list.
-	tricksChangeTracker.value++
+	// tricksChangeTracker.value++
+	tricks.value = updatedTricks
 }
 
 onMounted(() => doNewTrick())
@@ -32,8 +48,8 @@ onMounted(() => doNewTrick())
 
 <template>
 	<div class="py-24">
-		<div class="grid h-32 items-end gap-4">
-			<trick-list :tricks="tricksAsList"></trick-list>
+		<div class="relative grid h-32 grid-rows-1 items-end gap-4">
+			<trick-list :tricks="tricks"></trick-list>
 		</div>
 		<div class="mt-8 ml-4 flex lg:mr-[5vw] lg:justify-end">
 			<new-button :onclick="doNewTrick">Do a Trick</new-button>
