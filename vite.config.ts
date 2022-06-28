@@ -1,3 +1,6 @@
+/// <reference types="vite/client" />
+/// <reference types="vitest" />
+
 import path from 'path'
 
 import AutoImport from 'unplugin-auto-import/vite'
