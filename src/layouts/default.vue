@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import SlugblasterText from '~/components/SlugblasterText.vue'
+</script>
+
 <template>
 	<div
 		:class="$style.container"
@@ -10,17 +14,12 @@
 				:class="$style.image"
 			></div>
 		</div>
-		<div
-			class="pointer-events-none fixed -top-[13vw] w-full select-none text-center uppercase text-white font-amatic text-[20vw] leading-none"
-			aria-hidden
-		>
-			Slugblaster
+
+		<div class="fixed -top-[13vw] w-full">
+			<slugblaster-text />
 		</div>
-		<div
-			class="pointer-events-none fixed -bottom-[13vw] w-full select-none text-center uppercase text-white font-amatic text-[20vw] leading-none"
-			aria-hidden
-		>
-			Slugblaster
+		<div class="fixed -bottom-[13vw] w-full">
+			<slugblaster-text />
 		</div>
 	</div>
 </template>
