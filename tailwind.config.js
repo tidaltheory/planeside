@@ -53,5 +53,8 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [require('tailwindcss-capsize'), require('tailwindcss-opentype')],
+	plugins: [
+		require('tailwindcss-capsize')({ className: 'leading-trim' }),
+		require('tailwindcss-opentype'),
+	],
 }
