@@ -18,6 +18,9 @@ import SlugblasterText from '~/components/SlugblasterText.vue'
 		<div class="fixed -top-[13vw] w-full">
 			<slugblaster-text />
 		</div>
+		<div
+			class="fixed bottom-0 h-[20vw] w-full bg-gradient-to-t from-gray-900"
+		></div>
 		<div class="fixed -bottom-[13vw] w-full">
 			<slugblaster-text />
 		</div>

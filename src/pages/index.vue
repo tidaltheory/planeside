@@ -47,18 +47,20 @@ onMounted(() => doNewTrick())
 </script>
 
 <template>
-	<div class="py-24">
-		<div class="relative grid h-32 grid-rows-1 items-end gap-4">
+	<div class="relative pt-16 pb-24 md:pt-24">
+		<div
+			class="absolute -top-20 z-10 grid h-40 w-full grid-rows-1 items-end gap-4 md:relative md:top-0"
+		>
 			<trick-list :tricks="tricks"></trick-list>
 		</div>
 		<div class="mt-8 ml-4 flex lg:mr-[5vw] lg:justify-end">
 			<new-button :onclick="doNewTrick">Do a Trick</new-button>
 		</div>
-		<div class="mx-auto mt-24 px-8 lg:px-[8vw]">
+		<div class="mx-auto px-12 pt-16 md:pt-24 lg:px-[8vw]">
 			<p>
 				<span aria-hidden>
 					<span
-						class="dropcap float-left mt-2 mr-2 font-amatic text-5xl leading-none capsize"
+						class="dropcap float-left mt-2 mr-2 font-amatic text-5xl leading-none leading-trim"
 						>N</span
 					>eed
 				</span>
@@ -70,7 +72,7 @@ onMounted(() => doNewTrick())
 				something no one’s ever done before because it defies the laws
 				of&nbsp;physics!
 			</p>
-			<p class="my-12 text-center">🛹</p>
+			<p class="my-10 text-center md:my-12">🛹</p>
 			<p>Slugblaster is &copy; Michael Hamm.</p>
 		</div>
 	</div>

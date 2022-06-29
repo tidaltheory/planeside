@@ -35,7 +35,7 @@ const props = defineProps<Props>()
 
 .list-enter-from {
 	opacity: 0;
-	transform: translateY(2rem);
+	transform: translateY(calc(100% + 1rem));
 }
 
 .list-leave-from {
