@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "jsx": "preserve",
     "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
