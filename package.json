@@ -5,6 +5,7 @@
   "scripts": {
     "build": "vite-ssg build",
     "dev": "TAILWIND_MODE=watch vite --port 3333 --open",
+    "lens": "lens",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve dist",
@@ -60,6 +61,7 @@
     "vue-router": "4.0.16"
   },
   "devDependencies": {
+    "@tidaltheory/lens": "0.4.0",
     "@typescript-eslint/eslint-plugin": "5.30.3",
     "@typescript-eslint/parser": "5.30.3",
     "@vitejs/plugin-vue": "2.3.3",

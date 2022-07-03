@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HeroImage from '~/components/HeroImage.vue'
 import SlugblasterText from '~/components/SlugblasterText.vue'
 </script>
 
@@ -10,9 +11,10 @@ import SlugblasterText from '~/components/SlugblasterText.vue'
 		<router-view />
 		<div class="relative row-start-1 md:col-start-2">
 			<div
-				class="sticky top-0 h-full bg-black bg-cover bg-right"
-				:class="$style.image"
-			></div>
+				class="sticky top-0 h-full bg-black bg-cover bg-right md:h-screen"
+			>
+				<hero-image class="opacity-90" />
+			</div>
 		</div>
 
 		<div class="fixed -top-[13vw] w-full">
@@ -31,9 +33,5 @@ import SlugblasterText from '~/components/SlugblasterText.vue'
 .container {
 	grid-template-rows: 25vh auto;
 	@apply md:grid-rows-1;
-}
-
-.image {
-	background-image: url('/cosmos.jpg');
 }
 </style>
