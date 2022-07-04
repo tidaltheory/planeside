@@ -48,10 +48,12 @@ onMounted(() => doNewTrick())
 
 <template>
 	<div class="relative pt-16 pb-24 md:pt-24">
-		<div
-			class="absolute -top-20 z-10 grid h-40 w-full grid-rows-1 items-end gap-4 md:relative md:top-0"
-		>
-			<trick-list :tricks="tricks"></trick-list>
+		<div class="relative">
+			<div
+				class="absolute bottom-3 z-10 grid h-40 w-full grid-rows-1 items-end gap-4 md:relative md:top-0"
+			>
+				<trick-list :tricks="tricks"></trick-list>
+			</div>
 		</div>
 		<div class="mt-8 ml-4 flex lg:mr-[5vw] lg:justify-end">
 			<new-button :onclick="doNewTrick">Do a Trick</new-button>
