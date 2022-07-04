@@ -27,4 +27,8 @@
 		src: url('/fonts/amatic-sc-bold.woff2') format('woff2'),
 			url('/fonts/amatic-sc-bold.woff') format('woff');
 	}
+
+	html {
+		min-height: calc(100% + env(safe-area-inset-top));
+	}
 }
