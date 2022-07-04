@@ -47,10 +47,10 @@ onMounted(() => doNewTrick())
 </script>
 
 <template>
-	<div class="relative pt-16 pb-24 md:pt-24">
+	<div class="relative pt-16 pb-24 md:pt-36">
 		<div class="relative">
 			<div
-				class="absolute bottom-3 z-10 grid h-40 w-full grid-rows-1 items-end gap-4 md:relative md:top-0"
+				class="absolute bottom-3 z-10 grid min-h-[6.875rem] w-full grid-rows-1 items-end gap-4 px-4 md:left-[95%] md:bottom-auto md:top-0 md:px-0"
 			>
 				<trick-list :tricks="tricks"></trick-list>
 			</div>
