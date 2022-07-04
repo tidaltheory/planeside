@@ -1,5 +1,6 @@
 import {
 	BOARDFLIPS,
+	BOARDFLIP_MODIFIERS,
 	BOARD_PRE,
 	FLIPS,
 	FLIP_PRE,
@@ -64,8 +65,8 @@ function makeFlatTrick() {
 	return [
 		includeIntro && getIntro(),
 		// FACE[odds.natural(0, FACE.length - 1)],
-		includeSpin || (!includeBoard && getSpinMove()),
-		includeBoard || (!includeSpin && getBoardMove()),
+		(includeSpin || !includeBoard) && getSpinMove(),
+		(includeBoard || !includeSpin) && getBoardMove(),
 	]
 		.flat()
 		.filter((value) => Boolean(value))
@@ -146,14 +147,28 @@ function getSpinMove() {
 	return spinMove
 }
 
+const BOARDFLIP_PREFIXES = [BOARDFLIP_MODIFIERS, BOARD_PRE].flat()
+
 function getBoardMove() {
 	let includePre = odds.bool(45)
 	let flip = odds.natural(0, BOARDFLIPS.length - 1)
+	let preFlip
 
-	let flipMove = [
-		includePre && BOARD_PRE[odds.natural(0, BOARD_PRE.length - 1)],
-		BOARDFLIPS[flip],
-	].filter((value) => Boolean(value))
+	if (includePre) {
+		preFlip =
+			BOARDFLIP_PREFIXES[odds.natural(0, BOARDFLIP_PREFIXES.length - 1)]
+
+		// Maybe add a double boardflip prefix.
+		if (BOARDFLIP_MODIFIERS.includes(preFlip) && odds.bool(15)) {
+			preFlip = `${preFlip} ${
+				BOARD_PRE[odds.natural(0, BOARD_PRE.length - 1)]
+			}`
+		}
+	}
+
+	let flipMove = [includePre && preFlip, BOARDFLIPS[flip]].filter((value) =>
+		Boolean(value)
+	)
 
 	return flipMove
 }

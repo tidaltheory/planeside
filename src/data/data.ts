@@ -108,18 +108,21 @@ export const GRINDS = [
 	'the gutterball',
 ]
 
-export const BOARD_PRE = [
-	'360',
+export const BOARDFLIP_MODIFIERS = [
 	'backside',
 	'fakie',
-	'varial',
 	'frontside',
+	'nollie',
+	'switch',
+]
+
+export const BOARD_PRE = [
+	'360',
+	'varial',
 	'double',
 	'half-Cab',
 	'inward',
 	'late',
-	'nollie',
-	'switch',
 	'triple',
 ]
 export const BOARDFLIPS = [
