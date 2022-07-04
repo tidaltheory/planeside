@@ -83,8 +83,8 @@ function makeGrindTrick() {
 		includeIntro && 'to',
 		includePre && GRIND_PRE[odds.natural(0, GRIND_PRE.length - 1)],
 		GRINDS[odds.natural(0, GRINDS.length - 1)],
-		// includeOutro && getOutro(),
-		// includeOutro && 'out',
+		includeOutro && getOutro(),
+		includeOutro && 'out',
 	]
 		.flat()
 		.filter((value) => Boolean(value))
@@ -104,6 +104,10 @@ function makeStallTrick() {}
  */
 function getIntro() {
 	return INTRO[odds.natural(0, INTRO.length - 1)]
+}
+
+function getOutro() {
+	return odds.bool(50) ? getIntro() : getBoardMove()
 }
 
 /**
