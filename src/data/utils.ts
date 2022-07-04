@@ -64,9 +64,8 @@ function makeFlatTrick() {
 	return [
 		includeIntro && getIntro(),
 		// FACE[odds.natural(0, FACE.length - 1)],
-		getSpinMove(),
-		// includeSpin || (!includeBoard && getSpinMove()),
-		// includeBoard || (!includeSpin && getBoardMove()),
+		includeSpin || (!includeBoard && getSpinMove()),
+		includeBoard || (!includeSpin && getBoardMove()),
 	]
 		.flat()
 		.filter((value) => Boolean(value))

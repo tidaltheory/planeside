@@ -92,7 +92,7 @@ export const SPIN_PRE = ['Cab', 'half-Cab', 'hard way', 'alley oop']
 export const SPINS = ['180', '360', '540', '720', '900', '1080', '1260', '1800']
 export const SPIN_SUF = ['cork', 'double cork', 'triple cork', 'quadruple cork']
 
-export const GRIND_PRE = []
+export const GRIND_PRE = ['frontside', 'backside']
 export const GRINDS = [
 	'50-50',
 	'boardslide',
@@ -108,8 +108,68 @@ export const GRINDS = [
 	'the gutterball',
 ]
 
-export const BOARD_PRE = []
-export const BOARDFLIPS = []
+export const BOARD_PRE = [
+	'360',
+	'backside',
+	'fakie',
+	'varial',
+	'frontside',
+	'double',
+	'half-Cab',
+	'inward',
+	'late',
+	'nollie',
+	'switch',
+	'triple',
+]
+export const BOARDFLIPS = [
+	'hardflip',
+	'heelflip',
+	'kickflip',
+	'pop shove-it',
+	'bigflip',
+	'biggerflip',
+	'biggerspin',
+	'bigspin',
+	'bubble flip',
+	'bullflip',
+	'caballerial flip',
+	'camel flip',
+	'casper flip',
+	'daydream flip',
+	'de comply',
+	'disco flip',
+	'dragon flip',
+	'feather flip',
+	'fingerflip',
+	'forward flip',
+	'gazelle flip',
+	'gazelle spin',
+	'ghetto bird',
+	'gingersnap',
+	'grape flip',
+	'handstand flip',
+	'haslam flip',
+	'hospital flip',
+	'illusion flip',
+	'impossible',
+	'jesus flip',
+	'kickback flip',
+	'kiwi flip',
+	'laser flip',
+	'nerd flip',
+	'nightmare flip',
+	'no comply',
+	'orange flip',
+	'plasma spin',
+	'pressure flip',
+	'rail flip',
+	'semi flip',
+	'sex change',
+	'sigma flip',
+	'toeflip',
+	'underflip',
+]
 
 export const PLANTS = [
 	'invert',
@@ -137,6 +197,8 @@ export const STALLS = [
 	'blunt-stall',
 	'tail-block',
 	'nose-block',
+	'manual',
+	'nose manual',
 ]
 
 export const MODIFIERS = ['one-footed', 'shifty']
