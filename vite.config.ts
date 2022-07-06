@@ -50,6 +50,7 @@ export default defineConfig({
 				name: 'Planeside',
 				short_name: 'Planeside',
 				theme_color: '#ffffff',
+				display: 'standalone',
 				icons: [
 					{
 						src: '/icon-192.png',
