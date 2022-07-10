@@ -17,7 +17,7 @@ import SlugblasterText from '~/components/SlugblasterText.vue'
 			</div>
 		</div>
 
-		<div class="fixed -top-[13vw] w-full">
+		<div class="fixed -top-[6vw] w-full">
 			<slugblaster-text />
 		</div>
 		<div
