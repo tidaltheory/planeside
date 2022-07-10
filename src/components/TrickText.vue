@@ -2,7 +2,7 @@
 
 <template>
 	<span
-		class="block text-right font-marker text-3xl leading-none leading-trim lg:text-4xl"
+		class="block text-right font-marker text-3xl leading-none leading-trim md:text-left lg:text-4xl"
 	>
 		<slot></slot>
 	</span>
