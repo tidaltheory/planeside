@@ -49,7 +49,7 @@ export default defineConfig({
 			manifest: {
 				name: 'Planeside',
 				short_name: 'Planeside',
-				theme_color: '#ffffff',
+				theme_color: '#16191b',
 				display: 'standalone',
 				icons: [
 					{
