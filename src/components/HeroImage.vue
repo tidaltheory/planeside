@@ -1,6 +1,7 @@
 <script setup lang="ts">
 function reveal(event: any) {
 	;(event.target as HTMLElement).classList.toggle('opacity-0')
+	;(event.target as HTMLElement).classList.add('opacity-80')
 }
 </script>
 
@@ -24,7 +25,7 @@ function reveal(event: any) {
 		<source srcset="/cosmos-h.69935d14.avif" type="image/avif" />
 		<source srcset="/cosmos-h.69935d14.webp" type="image/webp" />
 		<img
-			class="h-full max-h-full w-full object-cover opacity-0"
+			class="h-full max-h-full w-full object-cover opacity-0 transition"
 			src="/cosmos-h.69935d14.jpg"
 			loading="lazy"
 			decoding="async"
