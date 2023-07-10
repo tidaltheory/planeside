@@ -62,8 +62,8 @@
   },
   "devDependencies": {
     "@tidaltheory/lens": "0.4.0",
-    "@typescript-eslint/eslint-plugin": "5.30.3",
-    "@typescript-eslint/parser": "5.30.3",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
     "@vitejs/plugin-vue": "2.3.3",
     "@vue/test-utils": "2.0.0",
     "autoprefixer": "10.4.7",
