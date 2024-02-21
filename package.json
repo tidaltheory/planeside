@@ -58,7 +58,7 @@
     "animejs": "3.2.1",
     "vue": "3.2.37",
     "vue-demi": "0.13.1",
-    "vue-router": "4.0.16"
+    "vue-router": "4.3.0"
   },
   "devDependencies": {
     "@tidaltheory/lens": "0.4.0",
