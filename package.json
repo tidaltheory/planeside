@@ -53,12 +53,12 @@
     ]
   },
   "dependencies": {
-    "@vueuse/core": "8.7.5",
-    "@vueuse/head": "0.7.6",
-    "animejs": "3.2.1",
-    "vue": "3.2.37",
-    "vue-demi": "0.13.1",
-    "vue-router": "4.0.16"
+    "@vueuse/core": "8.9.4",
+    "@vueuse/head": "0.9.8",
+    "animejs": "3.2.2",
+    "vue": "3.4.38",
+    "vue-demi": "0.14.10",
+    "vue-router": "4.4.3"
   },
   "devDependencies": {
     "@tidaltheory/lens": "0.4.0",
