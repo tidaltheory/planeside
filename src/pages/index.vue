@@ -75,7 +75,16 @@ onMounted(() => doNewTrick())
 				of&nbsp;physics!
 			</p>
 			<p class="my-10 text-center md:my-12">🛹</p>
-			<p>Slugblaster is &copy; Michael Hamm.</p>
+			<p>
+				By <a href="https://tidaltheory.io/">Tidal Theory</a>.
+				<a href="https://github.com/tidaltheory/planeside"
+					>View source</a
+				>.
+			</p>
+			<p>
+				<a href="https://slugblaster.com">Slugblaster</a> is &copy;
+				Michael Hamm.
+			</p>
 		</div>
 	</div>
 </template>

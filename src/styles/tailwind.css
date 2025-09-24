@@ -31,4 +31,17 @@
 	html {
 		min-height: calc(100vh + env(safe-area-inset-top));
 	}
+
+	a {
+		text-decoration: underline;
+		text-underline-offset: 2px;
+
+		&:not(:is(:hover, :focus)) {
+			text-decoration-color: color-mix(
+				in srgb,
+				currentcolor,
+				transparent 50%
+			);
+		}
+	}
 }
