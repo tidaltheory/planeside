@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@vueuse/core": "8.7.5",
-    "@vueuse/head": "0.7.6",
+    "@vueuse/head": "0.9.8",
     "animejs": "3.2.1",
     "vue": "3.2.37",
     "vue-demi": "0.13.1",
